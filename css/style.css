@@ -1,0 +1,22 @@
+.dbg{
+    background-color: rgba(255, 166, 65, 0.397);
+    border: 1px solid black;
+}
+
+/*
+    HEADER
+*/
+header{
+    height: 100px;
+}
+
+header nav{
+    height: 100%;
+}
+
+
+
+
+.jumbotron{
+    height: 300px;
+}

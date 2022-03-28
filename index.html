@@ -14,12 +14,52 @@
 </head>
 <body>
     
-    <header class="dbg">
-        <nav class="container dbg">
-            <div class="row h-100">
-                <div class="col-7 col-md-6 dbg h-50">left</div>
-                <div class="col-6 dbg h-50 d-md-block d-none ">right</div>
-                <div class="col-5 dbg d-md-none h-50">menu hambuger</div>
+    <header>
+        <nav class="container h-100">
+            <div class="align-items-center row h-100">
+                <div class="col-7 col-md-6">
+                    <h2 class="text-light">start bootstrap</h2>
+                </div>
+                <div class="col-5 d-md-block d-none ">
+                    <ul class="nav align-items-center justify-content-end">
+                        <li class="nav-item">
+                            <a class="text-decoration-none text-reset ms-3" href="#">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-decoration-none text-reset ms-3" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-decoration-none text-reset ms-3" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5 d-md-none h-100">
+                    <nav class=" navbar-dark justify-content-end ">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark" aria-current="page" href="#">portfolio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark" href="#">about</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark" href="#">contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </nav>
     </header>
@@ -37,25 +77,49 @@
             <div class="container">
                 <h2 class="text-center">Portfolio</h2>
             </div>
-            <div class="container h-75">
-                <div class="row h-100 dbg">
-                    <div class="col-4 h-50 dbg">
-                        <div class="col img-project h-100 dbg"></div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 h-100 ">
+                    <div class="col h-25 ">
+                        <div class="col img-project h-100 ">
+                            <a href="#">
+                                <img src="img/cabin.png" class="rounded" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4 h-50 dbg">
-                        <div class="col img-project h-100 dbg"></div>
+                    <div class="col h-25 ">
+                        <div class="col img-project h-100 ">
+                            <a href="#">
+                                <img src="img/cake.png" class="rounded" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4 h-50 dbg">
-                        <div class="col img-project h-100 dbg"></div>
+                    <div class="col h-25 ">
+                        <div class="col img-project h-100 ">
+                            <a href="#">
+                                <img src="img/circus.png" class="rounded" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4 h-50 dbg">
-                        <div class="col img-project h-100 dbg"></div>
+                    <div class="col h-25 ">
+                        <div class="col img-project h-100">
+                            <a href="#">
+                                <img src="img/game.png" class="rounded" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4 h-50 dbg">
-                        <div class="col img-project h-100 dbg"></div>
+                    <div class="col h-25 ">
+                        <div class="col img-project h-100 ">
+                            <a href="#">
+                                <img src="img/safe.png" class="rounded" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4 h-50 dbg">
-                        <div class="col img-project h-100 dbg"></div>
+                    <div class="col h-25 ">
+                        <div class="col img-project h-100 ">
+                            <a href="#">
+                                <img src="img/submarine.png" class="rounded" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,9 +133,9 @@
                 <h2 class="text-center">About</h2>
                 <div class="text_sect_about h-75 dbg">
                     <div class="container-fluid dbg">
-                        <div class="row">
-                            <div class="col-6 dbg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis nemo tempore quisquam hic dolore excepturi quas asperiores quos, evenie</div>
-                            <div class="col-6 dbg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis nemo tempore quisquam hic dolore excepturi quas asperiores quos, evenie</div>
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col dbg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis nemo tempore quisquam hic dolore excepturi quas asperiores quos, evenie</div>
+                            <div class="col dbg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis nemo tempore quisquam hic dolore excepturi quas asperiores quos, evenie</div>
                         </div>
                     </div>
                 </div>
@@ -93,7 +157,7 @@
 
     <footer class="container dbg">
         footer
-        <div class="row h-75 dbg">
+        <div class="row h-50 dbg">
             <div class="col-4 h-75 dbg">sx</div>
             <div class="col-4 h-75 dbg">center</div>
             <div class="col-4 h-75 dbg">dx</div>

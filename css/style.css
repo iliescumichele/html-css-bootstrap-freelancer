@@ -26,6 +26,12 @@ header nav{
     height: 600px;
 }
 
-#about{
+#about, #contact-me, footer{
     height: 300px;
+}
+
+#about .text_sect_about,
+#contact-me .text_sect_contact-me{
+    width: 65%;
+    margin: 0 auto;
 }

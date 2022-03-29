@@ -11,8 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- boostrap icons -->
+    <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css' integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==' crossorigin='anonymous'/>
 
     <title>1st Bootstrap</title>
 </head>
@@ -29,22 +30,22 @@
                 <div class="col-5 d-md-block d-none ">
                     <ul class="nav align-items-center justify-content-end">
                         <li class="nav-item">
-                            <a class="text-decoration-none text-reset ms-3" href="#">portfolio</a>
+                            <a class="text-decoration-none text-reset ms-3" href="#my-projects">portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-decoration-none text-reset ms-3" href="#">about</a>
+                            <a class="text-decoration-none text-reset ms-3" href="#about">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-decoration-none text-reset ms-3" href="#">contact</a>
+                            <a class="text-decoration-none text-reset ms-3" href="#contact-me">contact</a>
                         </li>
                     </ul>
                 </div>
                 <!-- /NAV NORMALE CON LINK UN ORIZZONTALE -->
 
                 <!-- HAMBURGER MENU -->
-                <div class="col-5 d-md-none h-100">
+                <div class="col-5 d-md-none">
                     <nav class=" navbar-dark justify-content-end ">
-                        <div class="container-fluid">
+                        <div class="container-fluid d-flex justify-content-end align-items-center">
                             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -55,13 +56,13 @@
                                 <div class="offcanvas-body">
                                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                         <li class="nav-item">
-                                            <a class="nav-link text-dark" aria-current="page" href="#">portfolio</a>
+                                            <a class="nav-link text-dark" aria-current="page" href="#my-projects">portfolio</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-dark" href="#">about</a>
+                                            <a class="nav-link text-dark" href="#about">about</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-dark" href="#">contact</a>
+                                            <a class="nav-link text-dark" href="#contact-me">contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -192,8 +193,15 @@
 
 
         <section id="contact-me">
-            <div class="container h-100 dbg">
+            <div class="container h-100 dbg py-4">
                 <h2 class="text-center">Contact me</h2>
+                <div class="star-and-lines d-flex flex-row justify-content-center align-items-center">
+                    <div class="line-star"></div>
+                    <span>
+                        <i class="bi bi-star-fill text-dark px-4" style="font-size: 2rem;"></i>
+                    </span>
+                    <div class="line-star"></div>
+                </div>
                 <form class="text_sect_contact-me h-75 dbg">
 
                 </form>
@@ -202,15 +210,30 @@
     </main>
 
 
-    <footer class="container dbg">
-        footer
-        <div class="row h-50 dbg">
-            <div class="col-4 h-75 dbg">sx</div>
-            <div class="col-4 h-75 dbg">center</div>
-            <div class="col-4 h-75 dbg">dx</div>
+    <footer class=" ">
+        <div class="container h-100">
+            <div class="row row-cols-1 row-cols-md-3 pt-5">
+                <div class="col text-center mb-5">
+                    <p class="small-title-footer">location</p>
+                    <p>2215 John Daniel Drive Clark, MI 54243</p>
+                </div>
+                <div class="col text-center mb-5">
+                    <p class="small-title-footer">around the web</p>
+                    <div class="icons-social-media">
+                        <a href=""><i class="fa-brands fa-facebook-f fa-1x circle-icon"></i></a>
+                        <a href=""><i class="fa-brands fa-google-plus-g fa-1x circle-icon"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter fa-1x circle-icon"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in fa-1x circle-icon"></i></a>
+                    </div>
+                </div>
+                <div class="col text-center mb-5">
+                    <p class="small-title-footer">about freelancer</p>
+                    <p>Freelance is a free to use, open source Bootsrap theme created by <a href="">Start Bootstrap</a>.</p>
+                </div>
+            </div>
         </div>
-        <div class="copywrite h-25 dbg">
-
+        <div class="copywrite text-center py-4">
+            Copyright &copy; Your Website 2019
         </div>
     </footer>
 
